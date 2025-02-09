@@ -8,7 +8,7 @@ try:
     )
     
     
-except:
+except mysql.connector.Error as err:
     print("DataBase connection failed")
     
 cur = mydb.cursor
