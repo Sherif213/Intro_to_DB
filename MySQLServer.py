@@ -1,13 +1,13 @@
 import mysql.connector
 try:
     mydb = mysql.connector.connect(
-        host = "localhost"
-        user = "root"
-        password = "1532910"
-        database = "alx_africa"
+        host = "localhost",
+        user = "root",
+        password = "1532910",
+        database = "alx_africa",
     )
     
-    
+
 except mysql.connector.Error as err:
     print("DataBase connection failed")
     
