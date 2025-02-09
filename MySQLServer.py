@@ -12,4 +12,8 @@ except:
     print("DataBase connection failed")
     
 cur = mydb.cursor
-cur.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+try: 
+    cur.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
+    print("Database 'alx_book_store' created successfully!")
+except:
+    print("Error")
