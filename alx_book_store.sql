@@ -29,6 +29,6 @@ CREATE TABLE Orders (
 CREATE TABLE Order_Details(
     order_details_id INT PRIMARY KEY,
     FOREIGN KEY(order_id) REFERENCES Orders (order_id),
-    quality float,
+    quality DOUBLE,
     FOREIGN KEY (book_id) REFERENCES Books(book_id),
 );
